@@ -1,11 +1,5 @@
-/**
- * Created by chichivica on 3/9/17.
- */
-/**
- *
- *
- */
-let sms = require('../modules/sms-sender');
+let user_service = require('/services/node_modules/user-service');
+var Sms = require("../modules/sms/sms.js").Sms;
 
 /**
  *
@@ -13,5 +7,5 @@ let sms = require('../modules/sms-sender');
  * @return {module:SmsModule.Processing.SmsProcessor}
  */
 function processSomeUser(smsSender) {
-
+  var sms = new Sms('hi', 'go');
 }
